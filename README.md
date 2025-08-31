@@ -27,3 +27,5 @@ This project is the **perfect starting point for Flutter devs** aiming to integr
 ### ⚠️ Note
 
 This app runs in **sandbox mode** — use a **PayPal sandbox account** to log in, perform test payments, and view the full JSON response. This is a great way to **learn how to configure and understand PayPal payment flows** before going live.
+
+- The `flutter_paypal_payment` package currently **supports Android only**. iOS support is not available at this time.
