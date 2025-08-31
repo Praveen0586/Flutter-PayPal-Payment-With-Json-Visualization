@@ -101,7 +101,7 @@ class PaypalPaymentDemo extends StatelessWidget {
               ),
             ));
           },
-          child: const Text('Pay with paypal'),
+          child: const Text('Pay with paypal', style: TextStyle(fontSize: 20)),
         ),
       ),
     );
