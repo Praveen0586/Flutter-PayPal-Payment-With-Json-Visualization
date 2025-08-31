@@ -1,31 +1,30 @@
 # Flutter PayPal Payment with JSON Visualization 💸📄
 
-A **clean and easy-to-use Flutter app** demonstrating PayPal payment integration using the `flutter_paypal_payment` package — perfect for developers looking to accept payments with full transparency!
+A **clean and easy-to-use Flutter app** demonstrating **PayPal payment integration** using the `flutter_paypal_payment` package — perfect for developers looking to accept **secure payments** with full transparency!
 
 ## 🌟 Highlights
 
-- ✅ **Seamless PayPal checkout** integration in Flutter (sandbox mode supported for testing)  
-- 🧾 **Dynamic JSON receipt visualization** that displays the payment response clearly and interactively  
-- 🔍 View detailed transaction info including payer details, items purchased, totals, and payment status  
-- 📱 Responsive UI adapts for both portrait and landscape modes  
-- 🛠️ Easy customization to fit your app’s payment workflow  
-- 🎯 Practical for e-commerce, service bookings, and digital sales apps  
-- 🛡️ Handles payment success, cancellation, and errors gracefully  
+- ✅ **Seamless PayPal checkout** integration in **Flutter** (**Android only**) with **sandbox mode** support for safe testing  
+- 🧾 **Dynamic JSON receipt visualization** displaying the complete payment **response payload** interactively  
+- 🔍 View detailed **transaction information** including payer details, purchased items, totals, and payment status  
+- 📱 **Responsive UI** that adapts to both **portrait and landscape** screen orientations  
+- 🛠️ Easily **customizable** to fit your app’s payment workflow  
+- 🎯 Practical for **e-commerce**, **service bookings**, and **digital sales** applications  
+- 🛡️ Handles **payment success**, **cancellation**, and **error** events gracefully  
 
 ## 🚀 Why Use This?
 
-This project is the **perfect starting point for Flutter devs** aiming to integrate PayPal payments seamlessly **while gaining insight into every detail of the transaction.** The included JSON receipt viewer makes understanding and troubleshooting payment data a breeze!
+This project is the **ideal starting point** for Flutter developers aiming to integrate **PayPal payments** seamlessly while gaining a deep understanding of every detail of the transaction. The included **JSON receipt viewer** simplifies **debugging** and **data visualization** for payment responses!
 
 ## 🛠️ How to Use
 
-- Tap **“Pay with PayPal”** to start a sample payment  
-- On success, see a beautifully formatted invoice showing all payment details in a JSON structure  
-- Learn how to handle payment callbacks for success, cancellation, and errors  
+- Tap **“Pay with PayPal”** button to initiate a sample payment  
+- Upon success, view a beautifully formatted **invoice** showing all payment details in a JSON structure  
+- Learn how to handle **payment callbacks** for success, cancellation, and errors  
 
 ---
 
 ### ⚠️ Note
 
-This app runs in **sandbox mode** — use a **PayPal sandbox account** to log in, perform test payments, and view the full JSON response. This is a great way to **learn how to configure and understand PayPal payment flows** before going live.
-
+- This app runs in **sandbox mode** — use a **PayPal sandbox account** to test payments, view the full JSON response, and learn how to configure and understand PayPal payment flows before going live.  
 - The `flutter_paypal_payment` package currently **supports Android only**. iOS support is not available at this time.
