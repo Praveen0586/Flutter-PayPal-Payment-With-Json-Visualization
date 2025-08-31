@@ -3,16 +3,22 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 // import 'package:flutter_paypal_payment/flutter_paypal_payment.dart';
 import 'package:flutter_paypal_payment/flutter_paypal_payment.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
-runApp(MaterialApp(
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
+  runApp(MaterialApp(
       title: 'PaypalPaymentDemp',
       debugShowCheckedModeBanner: false,
       home: PaypalPaymentDemo()));
 }
 
 class PaypalPaymentDemo extends StatelessWidget {
-  const PaypalPaymentDemo({super.key});
+  PaypalPaymentDemo({super.key});
+
+  var _sandboxClientId = dotenv.env['SANDBOX_CLIENDID'];
+  var _sandboxSecretKey = dotenv.env['SANDBOX_SECRETKEY'];
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +33,8 @@ class PaypalPaymentDemo extends StatelessWidget {
             Navigator.of(context).push(MaterialPageRoute(
               builder: (BuildContext context) => PaypalCheckoutView(
                 sandboxMode: true,
-                clientId:
-                    "AQTICTxUcxlrqAs9jmaaKjb69sM_ZcFPcIpye8vtoojLbMC6Iz_1uTjvAi6-7qqSDuB65rRC6nqKnPlM",
-                secretKey:
-                    "EKTD_xwT3Cjwm0csinf-eJajQMeoRSLJU0zSzm_vFfNLVz-Fw6TsiGIjToJusONLFNNEL41MTonfA2Ie",
+                clientId: _sandboxClientId,
+                secretKey: _sandboxSecretKey,
                 transactions: const [
                   {
                     "amount": {
